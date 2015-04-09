@@ -5,7 +5,7 @@
 		{
 			"modid": "jeckeltreeharvestermod",
 			"name": "JeckelTreeHarvesterMod",
-			"description": "JeckelTreeHarvesterMod adds a single, lava powered machine that will automatically harvest trees in a 5x10x5 area in front of the block. Requires: JeckelCoreLibrary",
+			"description": "JeckelTreeHarvesterMod adds a single, lava powered machine that will automatically harvest trees in a 5x10x5 area in front of the block. Requires: JeckelCoreLibrary 0.6.0-beta",
 			"version": "${version}",
 			"mcversion": "${mcversion}",
 			"forgeversion": "${forgeversion}",

@@ -10,7 +10,6 @@ import jeckeltreeharvestermod.content.treeharvester.TileTreeHarvester;
 import jeckeltreeharvestermod.core.Refs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -21,16 +20,13 @@ public class ScreenTreeHarvester extends AScreenTileInventory<TileTreeHarvester>
 	public ScreenTreeHarvester(EntityPlayer player, TileTreeHarvester tile)
 	{
 		super(player, tile, new ContainerTreeHarvester(player, tile), tile, 176, 166);
-		this._resource = new ResourceLocation(Refs.ModId, "textures/guis/tree_harvester.png");
+		this.setResourceLocation(Refs.ModId, "tree_harvester.png");
 	}
 
 	private Rectangle rectTank = new Rectangle(28, 22, 16, 47);
 
 	private final OverlayInfo infoTankExchanger = new OverlayInfo(new Rectangle(12, 41, 8, 9), new Point(0, 166), new Point(0, 166), false, false, false);
 	private final OverlayInfo infoTreeChopper = new OverlayInfo(new Rectangle(109, 35, 16, 16), new Point(176, 0), new Point(176, 16), true, false, false);
-
-	@Override public ResourceLocation getResourceLocation() { return this._resource; }
-	private ResourceLocation _resource;
 
 	@Override protected void onDrawTexts()
 	{
