@@ -229,6 +229,12 @@ implements ITileInteractable, ITileGuiActivator, IFluidHandler, ITileProcessor, 
 		return stacks;
 	}
 
+	public int getTargetLevel()
+	{
+		final BlockPosition posTarget = this.getTargetPosition();
+		return (posTarget == null ? 0 : posTarget.y - this.getBlockPosition().y);
+	}
+
 	public BlockPosition refreshTargetPosition(final int height)
 	{
 		final ForgeDirection frontSide = ForgeDirection.getOrientation(this.getFrontSide());

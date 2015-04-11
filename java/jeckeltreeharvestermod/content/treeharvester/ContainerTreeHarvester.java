@@ -10,16 +10,16 @@ public class ContainerTreeHarvester extends AContainerTileInventory<TileTreeHarv
 {
 	public ContainerTreeHarvester(EntityPlayer player, TileTreeHarvester tile)
 	{
-		super(player, tile, tile, 176, 166);
+		super(player, tile, tile, 176, 185);
 
 		// Liquid Container Input
-		this.addSlotToContainer(new SlotLavaFluidContainer(tile, 0, 8, 22));
+		this.addSlotToContainer(new SlotLavaFluidContainer(tile, 0, 8, 31));
 
 		// Liquid Container Output
-		this.addSlotToContainer(new SlotOutput(tile, 1, 8, 53));
+		this.addSlotToContainer(new SlotOutput(tile, 1, 8, 62));
 
 		// Internal Inventory
-		this.addInventorySlots(this._inventory, 134, 17, 2, 3, 2, SlotOutput.class);
+		this.addInventorySlots(this._inventory, 93, 26, 2, 3, 2, SlotOutput.class);
 
 		// Liquid Container Output
 		//this.addSlotToContainer(new SlotDisplay(tile, 11, 82, 53));
