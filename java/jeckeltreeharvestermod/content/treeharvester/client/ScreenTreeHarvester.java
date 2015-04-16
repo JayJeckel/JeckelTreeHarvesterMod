@@ -31,10 +31,7 @@ public class ScreenTreeHarvester extends AScreenTileInventory<TileTreeHarvester>
 	private final OverlayInfo infoTankExchanger = new OverlayInfo(new Rectangle(12, 50, 8, 9), new Point(0, 166), new Point(0, 166), false, false, false);
 	private final OverlayInfo infoTreeChopper = new OverlayInfo(new Rectangle(68, 44, 16, 16), new Point(176, 0), new Point(176, 16), true, false, false);
 
-	@Override protected void doDrawTitle()
-	{
-		this.drawTextCenter(this.getTitle(), 5);
-	}
+	@Override protected void doDrawTitle() { this.drawTextCenter(this.getTitle(), 5); }
 
 	@Override protected void onDrawTexts()
 	{
@@ -45,7 +42,7 @@ public class ScreenTreeHarvester extends AScreenTileInventory<TileTreeHarvester>
 		this.drawTextLeft("" + amount, 46, 50);
 		this.drawTextLeft(String.format("%.1f", percent) + "%", 46, 70);
 
-		this.drawTextLeft(StatCollector.translateToLocal("container.inventory"), 8, this.ySize - 98 + 5);
+		this.drawTextLeft(StatCollector.translateToLocal("container.inventory"), 8, this.ySize - 93);
 	}
 
 	@Override protected void onDrawOverlays()
